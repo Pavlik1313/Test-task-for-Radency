@@ -1,0 +1,55 @@
+.note-preview-box{
+    width: 100%;
+    background: #aaa;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+    border-bottom: 3px solid blue;
+}
+.note-preview-content{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.note-preview-box h3{
+     margin: 0;
+ }
+.note-icon {
+    background: gray;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.note-preview-name {
+    width: 15%;
+}
+.note-preview-created{
+    width: 10%;
+}
+.note-preview-category{
+    width: 15%;
+}
+.note-preview-text{
+    width: 35%;
+}
+.note-preview-dates{
+    width: 10%;
+}
+.note-preview-button{
+    margin: 5px;
+    background: gray;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 4px rgba(0,0,0,.5);
+
+}
+.note-preview-buttons{
+    display: flex;
+}

@@ -1,0 +1,58 @@
+.form-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+}
+.form-box {
+    padding: 20px;
+    background: white;
+    width: 500px;
+    height: 500px;
+    position: relative;
+
+}
+.note-name-input {
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.note-category-selector {
+    font-size: 18px;
+    position: absolute;
+    top: 25px;
+    left: 360px;
+}
+.cancel-button {
+    width: 100px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 320px;
+}
+.confirm-button {
+    background: linear-gradient(180deg, lightskyblue 0%, deepskyblue 100% );
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 4px solid blue;
+    width: 100px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 430px;
+}
+.note-text {
+    width: 500px;
+    height: 400px;
+    font-size: 20px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+}
