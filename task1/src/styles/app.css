@@ -1,0 +1,19 @@
+body {
+    position: relative;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+.date-in-text{
+    background: rgba(0,255,0,.2);
+}
+.open-archive-button{
+    margin: 25px 0;
+    width: 95%;
+    font-size: 30px;
+    background: linear-gradient(180deg, lightskyblue 0%, deepskyblue 100% );
+    border: 0;
+    border-radius: 5px;
+    border-bottom: 4px solid blue;
+}
+
