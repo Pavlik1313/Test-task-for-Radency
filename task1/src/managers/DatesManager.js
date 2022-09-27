@@ -13,7 +13,7 @@ function findDates (text) {
 
         }
     )
-    return dates.join('\n');
+    return dates.join('<br/>');
 }
 function highlightDates (text) {
     return (text.replace(reg, `<b class = 'date-in-text'>$&</b>`))

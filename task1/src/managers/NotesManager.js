@@ -1,9 +1,12 @@
 import {findDates} from "./DatesManager";
+import testNotesSet from "../testNodesSet";
 
-const activeNotes = [];
-const archiveNotes = [];
+let activeNotes = [];
+let archiveNotes = [];
 
 const NotesManager = {
+    addTeatNodesSet: ()=> activeNotes.push(...testNotesSet),
+
     countActiveNotes: ()=> activeNotes.length,
 
     getActiveNotes: (start, count) => activeNotes.slice(start, start+count),
@@ -15,6 +18,8 @@ const NotesManager = {
         const createdDate = new Date().toDateString().slice(4)+'<br/>'+new Date().toTimeString().slice(0,5);
         const dates = findDates(note.text);
         activeNotes.unshift({...note, id, createdDate, dates})
+        console.log(activeNotes);
+        console.log(archiveNotes);
     },
 
     updateNode: (newNote)=>{
@@ -50,7 +55,7 @@ const NotesManager = {
         const noteIndex = archiveNotes.findIndex((note) => note.id === id)
         if (noteIndex > -1){
             activeNotes.push(archiveNotes[noteIndex]);
-            activeNotes.sort((a, b) => b - a);
+            activeNotes = activeNotes.sort((a, b) => b.id - a.id);
             archiveNotes.splice(noteIndex, 1);
         }
     },

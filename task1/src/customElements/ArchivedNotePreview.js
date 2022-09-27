@@ -3,7 +3,6 @@ import createNotePreviewContent from "./NotePreviewContent";
 import {renderArchiveList} from "./NotesArchive";
 import {renderActiveNotesList} from "./ActiveNotesTable";
 import NotesManager from "../managers/NotesManager";
-import renderStatisticBox from "./Statistic";
 import icons from "../images/icons";
 
 function createArchivedNotePreview (note){
@@ -23,7 +22,6 @@ function createArchivedNotePreview (note){
             unarchiveNote.src = icons.unarchive;
             unarchiveNote.onclick = ()=>{
                NotesManager.unarchiveNote(id);
-               renderStatisticBox();
                renderArchiveList();
                renderActiveNotesList();
             }
@@ -34,7 +32,6 @@ function createArchivedNotePreview (note){
             deleteNote.onclick = ()=>{
                 NotesManager.deleteArchivedNote(id);
                 renderArchiveList();
-                renderStatisticBox();
             }
 
     buttons.append(

@@ -37,7 +37,7 @@ function createNotePreviewContent(note) {
 
     const   noteDates = document.createElement('h3');
             noteDates.className = 'note-preview-dates';
-            noteDates.textContent = dates;
+            noteDates.innerHTML = dates;
 
     noteContent.append(
         icon,

@@ -25,7 +25,11 @@
 }
 
 .note-view-text {
-    width: 500px;
+    width: 480px;
+    max-height: 500px;
+    overflow: auto;
+    background: rgba(127,127,255,.1);
+    padding: 10px;
     font-size: 20px;
     margin: 10px 0 40px 0;
 }

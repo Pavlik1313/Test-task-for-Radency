@@ -3,7 +3,6 @@ import createNotePreviewContent from "./NotePreviewContent";
 import {renderEditNoteForm} from "./NoteForm";
 import NotesManager from "../managers/NotesManager";
 import {renderActiveNotesList} from "./ActiveNotesTable";
-import renderStatisticBox from "./Statistic";
 import icons from "../images/icons";
 
 function createActiveNotePreview (note){
@@ -29,7 +28,6 @@ function createActiveNotePreview (note){
             archiveNote.onclick =()=>{
                 NotesManager.archiveNote(id);
                 renderActiveNotesList();
-                renderStatisticBox();
             }
 
     const   deleteNote = document.createElement('img');
@@ -38,7 +36,6 @@ function createActiveNotePreview (note){
             deleteNote.onclick = ()=> {
                 NotesManager.deleteNote(id);
                 renderActiveNotesList();
-                renderStatisticBox();
             }
 
     buttons.append(
